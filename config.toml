@@ -47,7 +47,7 @@ theme = "LoveIt"
   #  LoveIt 主题版本
   version = "0.2.X"
   # 网站描述
-  description = "不仅仅是Go语言，更是一种态度"
+  description = "学习Go语言，搭建Hugo博客"
   # 网站关键词
   keywords = ["Theme", "Hugo"]
   # 网站默认主题样式 ("light", "dark", "auto")
@@ -168,7 +168,7 @@ theme = "LoveIt"
       #  主页显示的网站标题 (支持 HTML 格式)
       title = ""
       # 主页显示的网站副标题
-      subtitle = "不仅仅是Go语言"
+      subtitle = "不仅仅是Go语言，还有Hugo！"
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号

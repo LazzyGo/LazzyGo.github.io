@@ -10,5 +10,5 @@ categories: ["Docs"]
  - docute: https://docute.org/zh
 
 图片相关
- - 全平台图标生成：https://realfavicongenerator.net/
+ - 全平台图标生成: https://realfavicongenerator.net/
 
