@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Docs - 分类 - Go博客</title>
+        <link>http://localhost:1313/categories/docs/</link>
+        <description>Docs - 分类 - Go博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lazzygo@outlook.com (Go博客)</managingEditor>
+            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Thu, 03 Mar 2022 07:30:14 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/docs/" rel="self" type="application/rss+xml" /><item>
+    <title>网站收藏</title>
+    <link>http://localhost:1313/sites/</link>
+    <pubDate>Thu, 03 Mar 2022 07:30:14 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://localhost:1313/sites/</guid>
+    <description><![CDATA[文档生成器/文档主题相关
+ docusaurus: https://docusaurus.io/zh-CN docute: https://docute.org/zh  图片相关
+ 全平台图标生成：https://realfavicongenerator.net/  ]]></description>
+</item></channel>
+</rss>

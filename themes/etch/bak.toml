@@ -1,0 +1,36 @@
+baseURL = "https://lazzygo.github.io"
+title = "无人小站"
+theme = "etch"
+languageCode = "zh-CN"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+publishDir = "./docs"
+
+[params]
+  description = ""
+  copyright = "Copyright © 2020 无人小站"
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "笔记"
+    title = "posts"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    title = "about"
+    url = "/about/"
+    weight = 20
+
+[permalinks]
+  posts = "/:title/"
+
+[markup.goldmark.renderer]
+  # Allows HTML in Markdown
+  unsafe = true
