@@ -4,9 +4,20 @@
         <link>http://localhost:1313/</link>
         <description>学习Go语言，搭建Hugo博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lazzygo@outlook.com (Go博客)</managingEditor>
-            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Fri, 04 Mar 2022 23:42:27 &#43;0000</lastBuildDate>
+            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Sat, 05 Mar 2022 09:35:28 &#43;0000</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>将flask应用部署到heroku</title>
+    <link>http://localhost:1313/flask-in-heroku/</link>
+    <pubDate>Sat, 05 Mar 2022 09:35:28 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://localhost:1313/flask-in-heroku/</guid>
+    <description><![CDATA[准备工作  注册heroku 在GitHub上创建一个repo 在heroku里创建一个Python app，并且关联到GitHub  三个文件  main.py requirements.txt Procfile  main.py
+1 2 3 4 5 6 7 8 9 10  from flask import Flask app = Flask(__name__) @app.route(&#39;/&#39;) def index(): return &#39;Hello World!&#39; if __name__ == &#39;__main__&#39;: app.run()   requirements.txt
+1 2  Flask gunicorn   Procfile
+1  web: gunicorn main:app   提交 把这三个文件push到刚才创建的repo。
+1 2 3 4 5  git init git remote add origin [repo] git add * git commit -m [msg] git push origin master   设置 进heroku后台]]></description>
+</item><item>
     <title>“只用”原则</title>
     <link>http://localhost:1313/only/</link>
     <pubDate>Fri, 04 Mar 2022 23:42:27 &#43;0000</pubDate>
@@ -31,6 +42,6 @@
     <pubDate>Thu, 03 Mar 2022 07:30:14 &#43;0000</pubDate>
     <author>作者</author>
     <guid>http://localhost:1313/sites/</guid>
-    <description><![CDATA[开发文档  python3-cookbook: https://python3-cookbook.readthedocs.io/zh_CN/  文档生成器/文档主题相关  docusaurus: https://docusaurus.io/zh-CN docute: https://docute.org/zh  图片相关  全平台图标生成: https://realfavicongenerator.net/  Web  Nuxt.js: https://nuxtjs.org/ PWA框架PWABuilder(microsoft): https://www.pwabuilder.com/ PWA框架Polymer: https://polymer-library.polymer-project.org PWA框架outweb: https://outweb.io/ axios: https://www.axios-http.cn/docs/intro  Server  nginx: https://www.nginx.cn/doc/ Flask: https://dormousehole.readthedocs.io/en/latest/quickstart.html  ]]></description>
+    <description><![CDATA[开发文档  python3-cookbook: https://python3-cookbook.readthedocs.io/zh_CN/  文档生成器/文档主题相关  docusaurus: https://docusaurus.io/zh-CN docute: https://docute.org/zh  图片相关  全平台图标生成: https://realfavicongenerator.net/  Web  Nuxt.js: https://nuxtjs.org/ PWA框架PWABuilder(microsoft): https://www.pwabuilder.com/ PWA框架Polymer: https://polymer-library.polymer-project.org PWA框架outweb: https://outweb.io/ axios: https://www.axios-http.cn/docs/intro  Server  nginx: https://www.nginx.cn/doc/ Flask: https://dormousehole.readthedocs.io/en/latest/quickstart.html certbot: https://certbot.eff.org/ candy: https://caddyserver.com/docs/getting-started  ]]></description>
 </item></channel>
 </rss>

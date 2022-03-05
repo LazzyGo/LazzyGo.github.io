@@ -20,4 +20,6 @@
 ## Server
  - nginx: https://www.nginx.cn/doc/
  - Flask: https://dormousehole.readthedocs.io/en/latest/quickstart.html
+ - certbot: https://certbot.eff.org/
+ - candy: https://caddyserver.com/docs/getting-started
 
