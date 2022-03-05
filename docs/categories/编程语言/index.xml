@@ -21,7 +21,7 @@
  Java，要写的代码太多了，不喜欢写长长的代码 C#，没有桌面软件、游戏开发的需求 C++，以我的菜鸟水平，根本不知道C++能用来干嘛 Ruby, Perl, R，我的评价是：不如Python jQuery，已经不再流行 设计模式，面向对象编程是什么？我只面向信仰编程 Vue, Angular, React，看不懂，也不需要懂 Django，不适合我的开发需求  尽可能少用或者不用的
  PHP，单纯的不喜欢PHP和它的Apache Go，虽然这个网站名字叫做“Go博客”，但是我并不打算深入学习Go，主要是它的特性，我没地方用，没有相关需求，Go可以用来提醒我，“编程可以是信仰”   总结：要在折腾的时候少折腾。
  编辑器、文档、软件的选择 永远只用：
- VSCode Vim 写代码，运行，完成！非专业人员，要那么多乱七八糟的功能干什么？  永远不要碰的
+ VSCode Vim  永远不要碰的
  word, excel, ppt，世界上那么多人连office都不会安装还不是照样活得好好的 Adobe全家桶，我连PS抠图都抠不好，这辈子是不可能碰设计类的软件了 Autodesk全家桶 JetBrains全家桶 Android Studio, Visual Studio，没有相关开发需求，如果有，可以用electron和h5能省下很多学习成本  操作系统的选择 桌面操作系统只用：]]></description>
 </item></channel>
 </rss>
