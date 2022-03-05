@@ -55,8 +55,8 @@ categories: ["编程","编程语言","软件"]
 ## 编辑器、文档、软件的选择
 
  日常使用
- - VSCode
- - Vim
+ - Vim，编辑器之神
+ - VSCode，备用
 
 不打算用的
  - word, excel, ppt，世界上那么多人连office都不会安装还不是照样活得好好的
