@@ -19,4 +19,8 @@ categories: ["Docs"]
  - PWA框架PWABuilder(microsoft): https://www.pwabuilder.com/
  - PWA框架Polymer: https://polymer-library.polymer-project.org 
  - PWA框架outweb: https://outweb.io/
+ - axios: https://www.axios-http.cn/docs/intro
+
+## Server
+ - nginx: https://www.nginx.cn/doc/
  - Flask: https://dormousehole.readthedocs.io/en/latest/quickstart.html
