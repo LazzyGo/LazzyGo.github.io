@@ -1,5 +1,7 @@
 # 网站收藏
 
+## 开发文档
+ - python3-cookbook: https://python3-cookbook.readthedocs.io/zh_CN/
 
 ## 文档生成器/文档主题相关
  - docusaurus: https://docusaurus.io/zh-CN

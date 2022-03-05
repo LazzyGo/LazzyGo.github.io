@@ -4,6 +4,8 @@ date: 2022-03-03T07:30:14Z
 tags: ["site"]
 categories: ["Docs"]
 ---
+## 开发文档
+ - python3-cookbook: https://python3-cookbook.readthedocs.io/zh_CN/
 
 ## 文档生成器/文档主题相关
  - docusaurus: https://docusaurus.io/zh-CN

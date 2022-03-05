@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>“只用”原则 - Go博客</title><meta name="Description" content="学习Go语言，搭建Hugo博客"><meta property="og:title" content="“只用”原则" />
+<meta property="og:description" content="前言  本篇幅仅仅是给自己制定的。首先，我很明确自己不是专业开发人员，也不想从事相关工作。 一切仅从解决问题的角度出发，即使代码写的再烂，只要能跑起来，完成它该做的事情就可以。
+ 静态博客 只用Hugo，原因（在保证功能够用的情况下）：
+ 最快，没有之一 最易用 最简单  拒绝hexo，jekyll的原因
+ NPM版本与系统的兼容性 Gem，bundle，jekyll安装容易出错，一般只适用于最新版本的软件和系统  拒绝Pelican的原因
+ 模板太难看，不要花时间去折腾开发模板，Hugo有现成的为什么不用  总结
+ 不要花时间在开发主题上，直接用现成的 不要把时间浪费在安装上，也许只是一个小报错，少个依赖，安装就能解决，又或者是版本过低，但至少我在hugo上没遇到过任何这类问题  编程语言以及框架等相关的选择  我首先要明确一点，我不是专业开发人员，我不希望从事程序员行业，仅作为爱好，也不想花太多时间钻研，尽可能做出最简单的选择，而不是选择性能最好，也不是最受欢迎。
+ 一般情况下，只用这三门语言
+ Python，相对简单 JavaScript，上天入地，无所不能 Shell 脚本语言真好用😊  永远不要碰的
+ Java，要写的代码太多了，不喜欢写长长的代码 C#，没有桌面软件、游戏开发的需求 C&#43;&#43;，以我的菜鸟水平，根本不知道C&#43;&#43;能用来干嘛 Ruby, Perl, R，我的评价是：不如Python jQuery，已经不再流行 设计模式，面向对象编程是什么？我只面向信仰编程 Vue, Angular, React，看不懂，也不需要懂 Django，不适合我的开发需求  尽可能少用或者不用的
+ PHP，单纯的不喜欢PHP和它的Apache MySQL，喜欢mongo Go，虽然这个网站名字叫做“Go博客”，但是我并不打算深入学习Go，主要是它的特性，我没地方用，没有相关需求，Go可以用来提醒我，“编程可以是信仰”   总结：要在折腾的时候少折腾。
+ 编辑器、文档、软件的选择 永远只用：
+ VSCode Vim 写代码，运行，完成！非专业人员，要那么多乱七八糟的功能干什么？  永远不要碰的
+ word, excel, ppt，世界上那么多人连office都不会安装还不是照样活得好好的 Adobe全家桶，我连PS抠图都抠不好，这辈子是不可能碰设计类的软件了 Autodesk全家桶 JetBrains全家桶 Android Studio, Visual Studio，没有相关开发需求，如果有，可以用electron和h5能省下很多学习成本  操作系统的选择 桌面操作系统只用：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/only/" /><meta property="og:image" content="http://localhost:1313/images/go.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-04T23:42:27+00:00" />
+<meta property="article:modified_time" content="2022-03-04T23:42:27+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/images/go.png"/>
+
+<meta name="twitter:title" content="“只用”原则"/>
+<meta name="twitter:description" content="前言  本篇幅仅仅是给自己制定的。首先，我很明确自己不是专业开发人员，也不想从事相关工作。 一切仅从解决问题的角度出发，即使代码写的再烂，只要能跑起来，完成它该做的事情就可以。
+ 静态博客 只用Hugo，原因（在保证功能够用的情况下）：
+ 最快，没有之一 最易用 最简单  拒绝hexo，jekyll的原因
+ NPM版本与系统的兼容性 Gem，bundle，jekyll安装容易出错，一般只适用于最新版本的软件和系统  拒绝Pelican的原因
+ 模板太难看，不要花时间去折腾开发模板，Hugo有现成的为什么不用  总结
+ 不要花时间在开发主题上，直接用现成的 不要把时间浪费在安装上，也许只是一个小报错，少个依赖，安装就能解决，又或者是版本过低，但至少我在hugo上没遇到过任何这类问题  编程语言以及框架等相关的选择  我首先要明确一点，我不是专业开发人员，我不希望从事程序员行业，仅作为爱好，也不想花太多时间钻研，尽可能做出最简单的选择，而不是选择性能最好，也不是最受欢迎。
+ 一般情况下，只用这三门语言
+ Python，相对简单 JavaScript，上天入地，无所不能 Shell 脚本语言真好用😊  永远不要碰的
+ Java，要写的代码太多了，不喜欢写长长的代码 C#，没有桌面软件、游戏开发的需求 C&#43;&#43;，以我的菜鸟水平，根本不知道C&#43;&#43;能用来干嘛 Ruby, Perl, R，我的评价是：不如Python jQuery，已经不再流行 设计模式，面向对象编程是什么？我只面向信仰编程 Vue, Angular, React，看不懂，也不需要懂 Django，不适合我的开发需求  尽可能少用或者不用的
+ PHP，单纯的不喜欢PHP和它的Apache MySQL，喜欢mongo Go，虽然这个网站名字叫做“Go博客”，但是我并不打算深入学习Go，主要是它的特性，我没地方用，没有相关需求，Go可以用来提醒我，“编程可以是信仰”   总结：要在折腾的时候少折腾。
+ 编辑器、文档、软件的选择 永远只用：
+ VSCode Vim 写代码，运行，完成！非专业人员，要那么多乱七八糟的功能干什么？  永远不要碰的
+ word, excel, ppt，世界上那么多人连office都不会安装还不是照样活得好好的 Adobe全家桶，我连PS抠图都抠不好，这辈子是不可能碰设计类的软件了 Autodesk全家桶 JetBrains全家桶 Android Studio, Visual Studio，没有相关开发需求，如果有，可以用electron和h5能省下很多学习成本  操作系统的选择 桌面操作系统只用："/>
+<meta name="application-name" content="Golang">
+<meta name="apple-mobile-web-app-title" content="Golang"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/only/" /><link rel="prev" href="http://localhost:1313/sites/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "“只用”原则",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/only\/"
+        },"image": ["http:\/\/localhost:1313\/images\/go.png"],"genre": "posts","keywords": "思考","wordcount":  76 ,
+        "url": "http:\/\/localhost:1313\/only\/","datePublished": "2022-03-04T23:42:27+00:00","dateModified": "2022-03-04T23:42:27+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Go博客"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="fixed"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Go博客"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/go.png"
+        data-srcset="/images/go.png, /images/go.png 1.5x, /images/go.png 2x"
+        data-sizes="auto"
+        alt="/images/go.png"
+        title="/images/go.png" />Go博客</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Go博客"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/go.png"
+        data-srcset="/images/go.png, /images/go.png 1.5x, /images/go.png 2x"
+        data-sizes="auto"
+        alt="/images/go.png"
+        title="/images/go.png" />Go博客</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">“只用”原则</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Go博客</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="far fa-folder fa-fw"></i>编程</a>&nbsp;<a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"><i class="far fa-folder fa-fw"></i>编程语言</a>&nbsp;<a href="/categories/%E8%BD%AF%E4%BB%B6/"><i class="far fa-folder fa-fw"></i>软件</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-04">2022-03-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 76 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="true">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#静态博客">静态博客</a></li>
+    <li><a href="#编程语言以及框架等相关的选择">编程语言以及框架等相关的选择</a></li>
+    <li><a href="#编辑器文档软件的选择">编辑器、文档、软件的选择</a></li>
+    <li><a href="#操作系统的选择">操作系统的选择</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="前言">前言</h2>
+<blockquote>
+<p>本篇幅仅仅是给自己制定的。首先，我很明确自己不是专业开发人员，也不想从事相关工作。
+一切仅从解决问题的角度出发，即使代码写的再烂，只要能跑起来，完成它该做的事情就可以。</p>
+</blockquote>
+<h2 id="静态博客">静态博客</h2>
+<p>只用Hugo，原因（在保证功能够用的情况下）：</p>
+<ul>
+<li>最快，没有之一</li>
+<li>最易用</li>
+<li>最简单</li>
+</ul>
+<p>拒绝hexo，jekyll的原因</p>
+<ul>
+<li>NPM版本与系统的兼容性</li>
+<li>Gem，bundle，jekyll安装容易出错，一般只适用于最新版本的软件和系统</li>
+</ul>
+<p>拒绝Pelican的原因</p>
+<ul>
+<li>模板太难看，不要花时间去折腾开发模板，Hugo有现成的为什么不用</li>
+</ul>
+<p>总结</p>
+<ul>
+<li>不要花时间在开发主题上，直接用现成的</li>
+<li>不要把时间浪费在安装上，也许只是一个小报错，少个依赖，安装就能解决，又或者是版本过低，但至少我在hugo上没遇到过任何这类问题</li>
+</ul>
+<h2 id="编程语言以及框架等相关的选择">编程语言以及框架等相关的选择</h2>
+<blockquote>
+<p>我首先要明确一点，我不是专业开发人员，我不希望从事程序员行业，仅作为爱好，也不想花太多时间钻研，尽可能做出最简单的选择，而不是选择性能最好，也不是最受欢迎。</p>
+</blockquote>
+<p>一般情况下，只用这三门语言</p>
+<ul>
+<li>Python，相对简单</li>
+<li>JavaScript，上天入地，无所不能</li>
+<li>Shell
+脚本语言真好用😊</li>
+</ul>
+<p>永远不要碰的</p>
+<ul>
+<li>Java，要写的代码太多了，不喜欢写长长的代码</li>
+<li>C#，没有桌面软件、游戏开发的需求</li>
+<li>C++，以我的菜鸟水平，根本不知道C++能用来干嘛</li>
+<li>Ruby, Perl, R，我的评价是：不如Python</li>
+<li>jQuery，已经不再流行</li>
+<li>设计模式，面向对象编程是什么？我只面向信仰编程</li>
+<li>Vue, Angular, React，看不懂，也不需要懂</li>
+<li>Django，不适合我的开发需求</li>
+</ul>
+<p>尽可能少用或者不用的</p>
+<ul>
+<li>PHP，单纯的不喜欢PHP和它的Apache</li>
+<li>MySQL，喜欢mongo</li>
+<li>Go，虽然这个网站名字叫做“Go博客”，但是我并不打算深入学习Go，主要是它的特性，我没地方用，没有相关需求，Go可以用来提醒我，“编程可以是信仰”</li>
+</ul>
+<blockquote>
+<p>总结：要在折腾的时候少折腾。</p>
+</blockquote>
+<h2 id="编辑器文档软件的选择">编辑器、文档、软件的选择</h2>
+<p>永远只用：</p>
+<ul>
+<li>VSCode</li>
+<li>Vim
+写代码，运行，完成！非专业人员，要那么多乱七八糟的功能干什么？</li>
+</ul>
+<p>永远不要碰的</p>
+<ul>
+<li>word, excel, ppt，世界上那么多人连office都不会安装还不是照样活得好好的</li>
+<li>Adobe全家桶，我连PS抠图都抠不好，这辈子是不可能碰设计类的软件了</li>
+<li>Autodesk全家桶</li>
+<li>JetBrains全家桶</li>
+<li>Android Studio, Visual Studio，没有相关开发需求，如果有，可以用electron和h5能省下很多学习成本</li>
+</ul>
+<h2 id="操作系统的选择">操作系统的选择</h2>
+<p>桌面操作系统只用：</p>
+<ul>
+<li>Ubuntu，简单易用</li>
+<li>Manjaro, 滚动升级，pacman很方便</li>
+<li>Windows，简单易用</li>
+</ul>
+<p>服务器只用：</p>
+<ul>
+<li>Ubuntu</li>
+<li>Windows</li>
+</ul>
+<p>相关说明：</p>
+<ul>
+<li>Kali，kali只是工具集，不要把它当作操作系统</li>
+<li>套壳美化的Linux系统，没必要，不如自己制定</li>
+<li>OSX，苹果的操作系统也许会挺流畅，但我不会用</li>
+<li>IOS，很多我平时需要用的软件在IOS平台都没有</li>
+<li>CentOS &amp; Fedora，用不习惯，不要因为大家都用CentOS就跟着去用</li>
+</ul>
+<p>我并没有歧视任何一门语言和工具，上述任何工具都有它强大的地方，本章一切仅仅是针对我自己的需求来选择。</p>
+<blockquote>
+<p>写下此篇，只希望以后能提醒到我，要在折腾的时候少折腾，不求什么都会，一知半解即可，轻松和开心最重要😊！</p>
+</blockquote>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-03-04</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/only/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://localhost:1313/only/" data-title="“只用”原则" data-via="xxxx" data-hashtags="思考"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://localhost:1313/only/" data-hashtag="思考"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://localhost:1313/only/" data-title="“只用”原则" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://localhost:1313/only/" data-title="“只用”原则"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://localhost:1313/only/" data-title="“只用”原则"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="http://localhost:1313/only/" data-title="“只用”原则" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="http://localhost:1313/only/" data-title="“只用”原则" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://localhost:1313/only/" data-title="“只用”原则"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E6%80%9D%E8%80%83/">思考</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/sites/" class="prev" rel="prev" title="网站收藏"><i class="fas fa-angle-left fa-fw"></i>网站收藏</a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Go博客</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
