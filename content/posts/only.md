@@ -43,7 +43,6 @@ categories: ["编程","编程语言","软件"]
  - Ruby, Perl, R，我的评价是：不如Python
  - jQuery，已经不再流行
  - 设计模式，面向对象编程是什么？我只面向信仰编程
- - Vue, Angular, React，看不懂，也不需要懂
  - Django，不适合我的开发需求
 
 尽可能少用或者不用的

@@ -16,6 +16,7 @@ categories: ["Docs"]
 
 ## Web
  - Nuxt.js: https://nuxtjs.org/
+ - Next.js: https://nextjs.org/
  - PWA框架PWABuilder(microsoft): https://www.pwabuilder.com/
  - PWA框架Polymer: https://polymer-library.polymer-project.org 
  - PWA框架outweb: https://outweb.io/
