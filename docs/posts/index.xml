@@ -14,11 +14,11 @@
  放在以前，Linux需要C++，Windows需要C#，Android需要Java，IOS需要Swift，Web前端需要JavaScript，服务器端又是一种抉择，不仅纠结语言，还纠结框架。
   现在只需要JavaScript就能解决以上所有问题，解决学习成本和开发成本，还能顺带小程序也搞定。
  先挖个坑，6月份开始学习前端
- vue/react next/nuxt electron  next/nuxt是为了学习移动应用开发，electron桌面应用开发
-如果渐进式网页开发有更简便的选择，果断弃坑vue/react
+ vue/react electron  next/nuxt是为了学习移动应用开发，electron桌面应用开发
 对于个人来说服务器还那么重要吗 静态托管方案有
  Netlify Github Pages 等等数不清的选择  要实现服务端功能呢
- Heroku Docker Hub  并且这些都是免费的，对于学生群体非常友好
+ Heroku Docker Hub  数据库呢
+ MongoDB  并且这些都是免费的，对于学生群体非常友好
 还有一个重要的问题 如果只是自己玩玩，并非做专业的开发，还有必要这么深入的学习吗？
 框架，开源项目一大堆，随便搬过来整合一下就是一个新的东西。
 既然并非从事开发工作，为什么不把时间多投入到生活当中？
@@ -60,6 +60,6 @@
     <pubDate>Thu, 03 Mar 2022 07:30:14 &#43;0000</pubDate>
     <author>作者</author>
     <guid>http://localhost:1313/sites/</guid>
-    <description><![CDATA[开发文档  python3-cookbook: https://python3-cookbook.readthedocs.io/zh_CN/  文档生成器/文档主题相关  docusaurus: https://docusaurus.io/zh-CN docute: https://docute.org/zh  图片相关  全平台图标生成: https://realfavicongenerator.net/  Web  Nuxt.js: https://nuxtjs.org/ Next.js: https://nextjs.org/ PWA框架PWABuilder(microsoft): https://www.pwabuilder.com/ PWA框架Polymer: https://polymer-library.polymer-project.org PWA框架outweb: https://outweb.io/ axios: https://www.axios-http.cn/docs/intro  Server  nginx: https://www.nginx.cn/doc/ Flask: https://dormousehole.readthedocs.io/en/latest/quickstart.html certbot: https://certbot.eff.org/ candy: https://caddyserver.com/docs/getting-started  ]]></description>
+    <description><![CDATA[python  python3-cookbook: https://python3-cookbook.readthedocs.io/zh_CN/  文档生成器/文档主题相关  docusaurus: https://docusaurus.io/zh-CN docute: https://docute.org/zh  图片相关  全平台图标生成: https://realfavicongenerator.net/  Web  Nuxt.js: https://nuxtjs.org/ Next.js: https://nextjs.org/ Manifests Generator: https://tomitm.github.io/appmanifest/ PWA框架PWABuilder(microsoft): https://www.pwabuilder.com/ PWA框架Polymer: https://polymer-library.polymer-project.org PWA框架outweb: https://outweb.io/ axios: https://www.axios-http.cn/docs/intro  Server  nginx: https://www.nginx.cn/doc/ Flask: https://dormousehole.readthedocs.io/en/latest/quickstart.html certbot: https://certbot.eff.org/ candy: https://caddyserver.com/docs/getting-started  免费资源  MongoDB: https://www.mongodb.com/zh-cn/cloud Vercel: https://vercel.com/ Netlify: https://www.netlify.com/ Heroku: https://heroku.com/  ]]></description>
 </item></channel>
 </rss>

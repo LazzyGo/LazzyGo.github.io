@@ -1,6 +1,6 @@
 # 网站收藏
 
-## 开发文档
+## python
  - python3-cookbook: https://python3-cookbook.readthedocs.io/zh_CN/
 
 ## 文档生成器/文档主题相关
@@ -13,6 +13,7 @@
 ## Web
  - Nuxt.js: https://nuxtjs.org/
  - Next.js: https://nextjs.org/
+ - Manifests Generator: https://tomitm.github.io/appmanifest/
  - PWA框架PWABuilder(microsoft): https://www.pwabuilder.com/
  - PWA框架Polymer: https://polymer-library.polymer-project.org 
  - PWA框架outweb: https://outweb.io/
@@ -23,4 +24,10 @@
  - Flask: https://dormousehole.readthedocs.io/en/latest/quickstart.html
  - certbot: https://certbot.eff.org/
  - candy: https://caddyserver.com/docs/getting-started
+
+##  免费资源
+ - MongoDB: https://www.mongodb.com/zh-cn/cloud
+ - Vercel: https://vercel.com/
+ - Netlify: https://www.netlify.com/
+ - Heroku: https://heroku.com/
 

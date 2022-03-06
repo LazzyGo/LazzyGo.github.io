@@ -9,12 +9,9 @@
 
 先挖个坑，6月份开始学习前端
  - vue/react
- - next/nuxt
  - electron
 
 next/nuxt是为了学习移动应用开发，electron桌面应用开发
-
-如果渐进式网页开发有更简便的选择，果断弃坑vue/react
 
 ## 对于个人来说服务器还那么重要吗
 
@@ -26,6 +23,9 @@ next/nuxt是为了学习移动应用开发，electron桌面应用开发
 要实现服务端功能呢
  - Heroku
  - Docker Hub
+
+数据库呢
+ - MongoDB
 
 并且这些都是免费的，对于学生群体非常友好
 
