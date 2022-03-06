@@ -12,7 +12,7 @@
  - next/nuxt
  - electron
 
-next/nuxt是为了学习单页、SSR应用开发，electron桌面应用开发
+next/nuxt是为了学习移动应用开发，electron桌面应用开发
 
 如果渐进式网页开发有更简便的选择，果断弃坑vue/react
 
