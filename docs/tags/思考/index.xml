@@ -4,7 +4,27 @@
         <link>http://localhost:1313/tags/%E6%80%9D%E8%80%83/</link>
         <description>思考 - 标签 - Go博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lazzygo@outlook.com (Go博客)</managingEditor>
-            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Fri, 04 Mar 2022 23:42:27 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%80%9D%E8%80%83/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Sun, 06 Mar 2022 02:13:52 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%80%9D%E8%80%83/" rel="self" type="application/rss+xml" /><item>
+    <title>选择比努力更重要</title>
+    <link>http://localhost:1313/choice-is-more-important-than-effort/</link>
+    <pubDate>Sun, 06 Mar 2022 02:13:52 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://localhost:1313/choice-is-more-important-than-effort/</guid>
+    <description><![CDATA[学了JavaScript就同等于拥有跨平台应用开发的能力，前后端通吃，节省大量的学习成本
+ 放在以前，Linux需要C++，Windows需要C#，Android需要Java，IOS需要Swift，Web前端需要JavaScript，服务器端又是一种抉择，不仅纠结语言，还纠结框架。
+  现在只需要JavaScript就能解决以上所有问题，解决学习成本和开发成本，还能顺带小程序也搞定。
+ 先挖个坑，6月份开始学习前端
+ vue/react next/nuxt electron  next/nuxt是为了学习单页、SSR应用开发，electron桌面应用开发
+如果渐进式网页开发有更简便的选择，果断弃坑vue/react
+对于个人来说服务器还那么重要吗 静态托管方案有
+ Netlify Github Pages 等等数不清的选择  要实现服务端功能呢
+ Heroku Docker Hub  并且这些都是免费的，对于学生群体非常友好
+还有一个重要的问题 如果只是自己玩玩，并非做专业的开发，还有必要这么深入的学习吗？
+框架，开源项目一大堆，随便搬过来整合一下就是一个新的东西。
+既然并非从事开发工作，为什么不把时间多投入到生活当中？
+为什么要沉迷在这些“学习”当中？
+跑步🏃，爬山，骑行🚲，游泳🏊，打篮球🏀，这些不是更有助于身心健康吗？]]></description>
+</item><item>
     <title>“只用”原则</title>
     <link>http://localhost:1313/only/</link>
     <pubDate>Fri, 04 Mar 2022 23:42:27 &#43;0000</pubDate>
