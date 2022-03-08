@@ -4,9 +4,16 @@
         <link>http://localhost:1313/</link>
         <description>学习Go语言，搭建Hugo博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lazzygo@outlook.com (Go博客)</managingEditor>
-            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Sun, 06 Mar 2022 02:13:52 &#43;0000</lastBuildDate>
+            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Tue, 08 Mar 2022 04:27:46 &#43;0000</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Autojs Switch Ui</title>
+    <link>http://localhost:1313/autojs-switch-ui/</link>
+    <pubDate>Tue, 08 Mar 2022 04:27:46 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://localhost:1313/autojs-switch-ui/</guid>
+    <description><![CDATA[切换布局 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  &#34;ui&#34;; 界面1(); function 界面1(){ ui.layout( &lt;vertical&gt; &lt;button id=&#34;ok&#34; text=&#34;切换界面&#34;/&gt; &lt;/vertical&gt; ); ui.ok.click(function(){ 界面2(); }); } function 界面2(){ ui.layout( &lt;vertical&gt; &lt;button id=&#34;ok&#34; text=&#34;点一下回去&#34;/&gt; &lt;/vertical&gt; ); ui.ok.click(function(){ 界面1(); }); }   ]]></description>
+</item><item>
     <title>选择比努力更重要</title>
     <link>http://localhost:1313/choice-is-more-important-than-effort/</link>
     <pubDate>Sun, 06 Mar 2022 02:13:52 &#43;0000</pubDate>
@@ -17,8 +24,7 @@
   现在只需要JavaScript就能解决以上所有问题，解决学习成本和开发成本，还能顺带小程序也搞定。
  对于个人来说服务器还那么重要吗 静态托管方案有
  Netlify Github Pages 等等数不清的选择  要实现服务端功能呢
- Heroku Docker Hub  数据库呢
- MongoDB  并且这些都是免费的，对于学生群体非常友好
+ Heroku Docker Hub Deta  并且这些都是免费的，对于学生群体非常友好
 还有一个重要的问题 如果只是自己玩玩，并非做专业的开发，还有必要这么深入的学习吗？
 框架，开源项目一大堆，随便搬过来整合一下就是一个新的东西。
 既然并非从事开发工作，为什么不把时间多投入到生活当中？
@@ -60,6 +66,6 @@
     <pubDate>Thu, 03 Mar 2022 07:30:14 &#43;0000</pubDate>
     <author>作者</author>
     <guid>http://localhost:1313/sites/</guid>
-    <description><![CDATA[python  python3-cookbook: https://python3-cookbook.readthedocs.io/zh_CN/  文档生成器/文档主题相关  docusaurus: https://docusaurus.io/zh-CN docute: https://docute.org/zh  图片相关  全平台图标生成: https://realfavicongenerator.net/  Web  Nuxt.js: https://nuxtjs.org/ Next.js: https://nextjs.org/ Manifests Generator: https://tomitm.github.io/appmanifest/ PWA框架PWABuilder(microsoft): https://www.pwabuilder.com/ PWA框架Polymer: https://polymer-library.polymer-project.org PWA框架outweb: https://outweb.io/ axios: https://www.axios-http.cn/docs/intro  Server  nginx: https://www.nginx.cn/doc/ Flask: https://dormousehole.readthedocs.io/en/latest/quickstart.html certbot: https://certbot.eff.org/ candy: https://caddyserver.com/docs/getting-started  免费资源  MongoDB: https://www.mongodb.com/zh-cn/cloud Vercel: https://vercel.com/ Netlify: https://www.netlify.com/ Heroku: https://heroku.com/  ]]></description>
+    <description><![CDATA[python  python3-cookbook: https://python3-cookbook.readthedocs.io/zh_CN/  文档生成器/文档主题相关  docusaurus: https://docusaurus.io/zh-CN docute: https://docute.org/zh  图片相关  全平台图标生成: https://realfavicongenerator.net/  Web  Nuxt.js: https://nuxtjs.org/ Next.js: https://nextjs.org/ Manifests Generator: https://tomitm.github.io/appmanifest/ PWA框架PWABuilder(microsoft): https://www.pwabuilder.com/ PWA框架Polymer: https://polymer-library.polymer-project.org PWA框架outweb: https://outweb.io/ axios: https://www.axios-http.cn/docs/intro  Server  nginx: https://www.nginx.cn/doc/ Flask: https://dormousehole.readthedocs.io/en/latest/quickstart.html certbot: https://certbot.eff.org/ candy: https://caddyserver.com/docs/getting-started  免费资源  MongoDB: https://www.mongodb.com/zh-cn/cloud Vercel: https://vercel.com/ Netlify: https://www.netlify.com/ Heroku: https://heroku.com/ Deta: https://www.deta.sh/  自动化  airtest: https://airtest.netease.com/  ]]></description>
 </item></channel>
 </rss>

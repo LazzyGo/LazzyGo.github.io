@@ -17,9 +17,7 @@
 要实现服务端功能呢
  - Heroku
  - Docker Hub
-
-数据库呢
- - MongoDB
+ - Deta
 
 并且这些都是免费的，对于学生群体非常友好
 

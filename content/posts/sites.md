@@ -34,3 +34,7 @@ categories: ["Docs"]
  - Vercel: https://vercel.com/
  - Netlify: https://www.netlify.com/
  - Heroku: https://heroku.com/
+ - Deta: https://www.deta.sh/
+
+## 自动化
+ - airtest: https://airtest.netease.com/
