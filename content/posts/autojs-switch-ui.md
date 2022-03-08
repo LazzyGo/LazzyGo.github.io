@@ -1,5 +1,5 @@
 ---
-title: "Autojs Switch Ui"
+title: "Auto.js切换UI布局"
 date: 2022-03-08T04:27:46Z
 tags: ["auto.js"]
 categories: ["javascript","android"]
