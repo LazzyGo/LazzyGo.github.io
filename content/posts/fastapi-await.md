@@ -5,6 +5,8 @@ categories: ["python"]
 tags: ["fastapi"]
 ---
 ### 测试代码
+
+用100个并发请求分别测试下面4个接口：
 ```python
 from fastapi import APIRouter
 import time

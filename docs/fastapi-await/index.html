@@ -6,7 +6,8 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Fastapi用和不用await的区别 - Go博客</title><meta name="Description" content="学习Go语言，搭建Hugo博客"><meta property="og:title" content="Fastapi用和不用await的区别" />
-<meta property="og:description" content="测试代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  from fastapi import APIRouter import time import asyncio router = APIRouter() @router.get(&#34;/a&#34;) async def a(): time.sleep(1) return {&#34;message&#34;: &#34;异步模式，但是同步执行sleep函数，执行过程是串行的&#34;} @router.get(&#34;/b&#34;) async def b(): loop = asyncio.get_event_loop() await loop.run_in_executor(None, time.sleep, 1) return {&#34;message&#34;: &#34;线程池中运行sleep函数&#34;} @router.get(&#34;/c&#34;) async def c(): await asyncio." />
+<meta property="og:description" content="测试代码 用100个并发请求分别测试下面4个接口：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  from fastapi import APIRouter import time import asyncio router = APIRouter() @router.get(&#34;/a&#34;) async def a(): time.sleep(1) return {&#34;message&#34;: &#34;异步模式，但是同步执行sleep函数，执行过程是串行的&#34;} @router.get(&#34;/b&#34;) async def b(): loop = asyncio.get_event_loop() await loop.run_in_executor(None, time.sleep, 1) return {&#34;message&#34;: &#34;线程池中运行sleep函数&#34;} @router.get(&#34;/c&#34;) async def c(): await asyncio." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/fastapi-await/" /><meta property="og:image" content="http://localhost:1313/images/go.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-09T05:50:17+00:00" />
@@ -16,7 +17,8 @@
 <meta name="twitter:image" content="http://localhost:1313/images/go.png"/>
 
 <meta name="twitter:title" content="Fastapi用和不用await的区别"/>
-<meta name="twitter:description" content="测试代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  from fastapi import APIRouter import time import asyncio router = APIRouter() @router.get(&#34;/a&#34;) async def a(): time.sleep(1) return {&#34;message&#34;: &#34;异步模式，但是同步执行sleep函数，执行过程是串行的&#34;} @router.get(&#34;/b&#34;) async def b(): loop = asyncio.get_event_loop() await loop.run_in_executor(None, time.sleep, 1) return {&#34;message&#34;: &#34;线程池中运行sleep函数&#34;} @router.get(&#34;/c&#34;) async def c(): await asyncio."/>
+<meta name="twitter:description" content="测试代码 用100个并发请求分别测试下面4个接口：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  from fastapi import APIRouter import time import asyncio router = APIRouter() @router.get(&#34;/a&#34;) async def a(): time.sleep(1) return {&#34;message&#34;: &#34;异步模式，但是同步执行sleep函数，执行过程是串行的&#34;} @router.get(&#34;/b&#34;) async def b(): loop = asyncio.get_event_loop() await loop.run_in_executor(None, time.sleep, 1) return {&#34;message&#34;: &#34;线程池中运行sleep函数&#34;} @router.get(&#34;/c&#34;) async def c(): await asyncio."/>
 <meta name="application-name" content="Golang">
 <meta name="apple-mobile-web-app-title" content="Golang"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +31,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/fastapi-await\/"
-        },"image": ["http:\/\/localhost:1313\/images\/go.png"],"genre": "posts","keywords": "fastapi","wordcount":  113 ,
+        },"image": ["http:\/\/localhost:1313\/images\/go.png"],"genre": "posts","keywords": "fastapi","wordcount":  114 ,
         "url": "http:\/\/localhost:1313\/fastapi-await\/","datePublished": "2022-03-09T05:50:17+00:00","dateModified": "2022-03-09T05:50:17+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -93,7 +95,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Fastapi用和不用await的区别</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Go博客</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/python/"><i class="far fa-folder fa-fw"></i>python</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-09">2022-03-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 113 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-09">2022-03-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 114 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -112,6 +114,7 @@
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h3 id="测试代码">测试代码</h3>
+<p>用100个并发请求分别测试下面4个接口：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
