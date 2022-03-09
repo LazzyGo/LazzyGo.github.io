@@ -205,8 +205,8 @@
             <i class="icon fas fa-check-circle fa-fw"></i>b接口<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>利用asyncio异步IO获取当前的event loop。
-然后将time.sleep(1)放到一个event loop中去运行，函数内部用到了await，所以无堵塞。</p>
+            <div class="admonition-content"><p>利用asyncio异步IO获取当前的event loop。</p>
+<p>然后将time.sleep(1)放到一个event loop中去运行，函数内部用到了await，所以无堵塞。</p>
 <p>执行过程是并行的，所以总耗时1秒。</p>
 </div>
         </div>
@@ -216,8 +216,8 @@
             <i class="icon fas fa-list-ul fa-fw"></i>c接口<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>使用异步IO的sleep取代了普通的同步sleep。
-原理与b接口一致。</p>
+            <div class="admonition-content"><p>使用异步IO的sleep取代了普通的同步sleep。</p>
+<p>原理与b接口一致。</p>
 <p>执行过程是并行的，所以总耗时1秒。</p>
 </div>
         </div>
@@ -227,11 +227,11 @@
             <i class="icon fas fa-lightbulb fa-fw"></i>d接口<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>这个函数没有async修饰，即一个普通函数。
-但是FastAPI会将函数放到thread pool中执行。</p>
+            <div class="admonition-content"><p>这个函数没有async修饰，即一个普通函数。</p>
+<p>但是FastAPI会将函数放到thread pool中执行。</p>
 <p>服务器是8核CPU，线程池的默认配置是核心数*5=40。</p>
-<p>服务器在第一秒和第二秒分别处理40个请求，第三秒处理20个请求。
-所以100个并发总耗时3秒。</p>
+<p>服务器在第一秒和第二秒分别处理40个请求，第三秒处理20个请求。</p>
+<p>所以100个并发总耗时3秒。</p>
 </div>
         </div>
     </div>
@@ -240,8 +240,8 @@
             <i class="icon fas fa-quote-right fa-fw"></i>总结<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>这个函数没有async修饰，即一个普通函数。
-官方说，无论你是否使用async，FastAPI都会采用异步的方式处理。</p>
+            <div class="admonition-content"><p>这个函数没有async修饰，即一个普通函数。</p>
+<p>官方说，无论你是否使用async，FastAPI都会采用异步的方式处理。</p>
 <p>但是，如果你定义了async函数，函数体却是同步的调用（例：a接口），将导致函数执行过程变成串行。</p>
 </div>
         </div>
