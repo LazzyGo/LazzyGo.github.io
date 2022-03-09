@@ -4,7 +4,14 @@
         <link>http://localhost:1313/categories/python/</link>
         <description>python - 分类 - Go博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lazzygo@outlook.com (Go博客)</managingEditor>
-            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Sat, 05 Mar 2022 09:35:28 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/python/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Wed, 09 Mar 2022 03:11:16 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/python/" rel="self" type="application/rss+xml" /><item>
+    <title>Python时间</title>
+    <link>http://localhost:1313/python-time/</link>
+    <pubDate>Wed, 09 Mar 2022 03:11:16 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://localhost:1313/python-time/</guid>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11  &gt;&gt;&gt; time.strftime(&#39;%X&#39;) &#39;11:09:41&#39; &gt;&gt;&gt; time.strftime(&#39;%x&#39;) &#39;03/09/22&#39; &gt;&gt;&gt; time.strftime(&#39;%d&#39;) &#39;09&#39; &gt;&gt;&gt; time.strftime(&#39;%y&#39;) &#39;22&#39; &gt;&gt;&gt; time.strftime(&#39;%m&#39;) &#39;03&#39; &gt;&gt;&gt;   ]]></description>
+</item><item>
     <title>将flask应用部署到heroku</title>
     <link>http://localhost:1313/flask-in-heroku/</link>
     <pubDate>Sat, 05 Mar 2022 09:35:28 &#43;0000</pubDate>
