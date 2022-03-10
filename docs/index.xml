@@ -4,9 +4,16 @@
         <link>http://localhost:1313/</link>
         <description>学习Go语言，搭建Hugo博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lazzygo@outlook.com (Go博客)</managingEditor>
-            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Wed, 09 Mar 2022 05:50:17 &#43;0000</lastBuildDate>
+            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Thu, 10 Mar 2022 09:21:41 &#43;0000</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>练习与复习</title>
+    <link>http://localhost:1313/practice-and-review/</link>
+    <pubDate>Thu, 10 Mar 2022 09:21:41 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://localhost:1313/practice-and-review/</guid>
+    <description><![CDATA[python  sqlite3 https://docs.python.org/2/library/sqlite3.html fastapi https://fastapi.tiangolo.com/zh/tutorial/first-steps/ asyncio https://docs.python.org/zh-cn/3/library/asyncio-task.html#coroutine python https://www.runoob.com/python3/python3-built-in-functions.html  linux  vim https://yianwillis.github.io/vimcdoc/doc/help.html shell https://www.runoob.com/linux/linux-shell.html  其他  设计模式 https://refactoring.guru/design-patterns sqlite https://www.runoob.com/sqlite/sqlite-functions.html sql语句总汇 https://www.runoob.com/sql/sql-function.html pybit https://bybit-exchange.github.io/docs/zh-cn/linear/#t-key  ]]></description>
+</item><item>
     <title>Fastapi用和不用await的区别</title>
     <link>http://localhost:1313/fastapi-await/</link>
     <pubDate>Wed, 09 Mar 2022 05:50:17 &#43;0000</pubDate>
