@@ -50,6 +50,10 @@ r=test(url,params)
 
 docs: https://www.okex.com/docs/zh
 
+rest:
+ - okexcn.com
+ - okx.me
+
 好像不可用
 ```python
 import requests,json
