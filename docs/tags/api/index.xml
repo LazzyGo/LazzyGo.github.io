@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>api - 标签 - Go博客</title>
+        <link>http://localhost:1313/tags/api/</link>
+        <description>api - 标签 - Go博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lazzygo@outlook.com (Go博客)</managingEditor>
+            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Mon, 21 Mar 2022 09:13:05 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/api/" rel="self" type="application/rss+xml" /><item>
+    <title>交易所api</title>
+    <link>http://localhost:1313/exapi/</link>
+    <pubDate>Mon, 21 Mar 2022 09:13:05 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://localhost:1313/exapi/</guid>
+    <description><![CDATA[bybit 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  import requests import json r=requests.get(&#34;https://api-testnet.bybit.com/public/linear/kline?symbol=BTCUSDT&amp;interval=1&amp;limit=2&amp;from=1581231260&#34;) print(json.dumps(json.loads(r.text)[&#39;result&#39;],indent=4,sort_keys=True)) kline=&#34;https://api-testnet.bybit.com/public/linear/kline&#34; params={ &#39;symbol&#39;:&#39;BTCUSDT&#39;, &#39;interval&#39;:1, &#39;limit&#39;:2, &#39;from&#39;:1581231260 } r1=requests.get(kline,params=params) data=json.loads(r1.text) data=json.dumps(data[&#39;result&#39;],indent=4,sort_keys=True) print(data)   binance docs: https://binance-docs.github.io/apidocs/futures/en
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  import json,requests def test(url,paramas): r=requests.get(url,params=params).text data=json.dumps(json.loads(r),indent=4,sort_keys=True) print(data) return data url=&#34;https://fapi.binance.com/fapi/v1/time&#34; params={} r=test(url,params) #r=requests.get(&#34;https://fapi.binance.com/fapi/v1/time&#34;) #print(r.]]></description>
+</item></channel>
+</rss>

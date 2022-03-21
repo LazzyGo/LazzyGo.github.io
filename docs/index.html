@@ -89,6 +89,12 @@
         alt="https://www.gravatar.com/avatar/a013bcc1a35e3247a9fb0b9ababf01c9?s=240&amp;d=mp"
         title="https://www.gravatar.com/avatar/a013bcc1a35e3247a9fb0b9ababf01c9?s=240&amp;d=mp" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/exapi/">交易所api</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Go博客</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2022-03-21">2022-03-21</time></span></div><div class="content">bybit 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  import requests import json r=requests.get(&#34;https://api-testnet.bybit.com/public/linear/kline?symbol=BTCUSDT&amp;interval=1&amp;limit=2&amp;from=1581231260&#34;) print(json.dumps(json.loads(r.text)[&#39;result&#39;],indent=4,sort_keys=True)) kline=&#34;https://api-testnet.bybit.com/public/linear/kline&#34; params={ &#39;symbol&#39;:&#39;BTCUSDT&#39;, &#39;interval&#39;:1, &#39;limit&#39;:2, &#39;from&#39;:1581231260 } r1=requests.get(kline,params=params) data=json.loads(r1.text) data=json.dumps(data[&#39;result&#39;],indent=4,sort_keys=True) print(data)   binance docs: https://binance-docs.github.io/apidocs/futures/en
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  import json,requests def test(url,paramas): r=requests.get(url,params=params).text data=json.dumps(json.loads(r),indent=4,sort_keys=True) print(data) return data url=&#34;https://fapi.binance.com/fapi/v1/time&#34; params={} r=test(url,params) #r=requests.get(&#34;https://fapi.binance.com/fapi/v1/time&#34;) #print(r.</div><div class="post-footer">
+        <a href="/exapi/">阅读全文</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/api/">api</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/vim/">在vim下写Python</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Go博客</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2022-03-11">2022-03-11</time></span></div><div class="content">需求  代码高亮 一键运行 关闭代码提示的preview 代码自动/手动补全 代码块  注意 termux环境里，Python代码补全需要vim-python这个包，默认情况下会安装有，但有时候需要手动安装。</div><div class="post-footer">
         <a href="/vim/">阅读全文</a><div class="post-tags">
@@ -112,11 +118,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Go博客</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2022-03-08">2022-03-08</time></span>&nbsp;<span class="post-category">收录于 <a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>javascript</a>&nbsp;<a href="/categories/android/"><i class="far fa-folder fa-fw"></i>android</a></span></div><div class="content">设置两秒后销毁UI 1 2 3 4 5 6 7 8 9 10 11 12 13 14  &#34;ui&#34;; $ui.layout( &lt;vertical&gt; &lt;appbar&gt; &lt;toolbar title=&#34;kkk&#34; /&gt; &lt;/appbar&gt; &lt;button text=&#34;j&#34; /&gt; &lt;/vertical&gt; ) setTimeout(()=&gt;{ ui.finish()} ,2000)   </div><div class="post-footer">
         <a href="/autojs-finish-ui/">阅读全文</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/autojs/">autojs</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/bootstrap-css/">Bootstrap &amp; CSS笔记</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Go博客</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2022-03-08">2022-03-08</time></span>&nbsp;<span class="post-category">收录于 <a href="/categories/css/"><i class="far fa-folder fa-fw"></i>css</a></span></div><div class="content">去除输入框阴影 1 2 3 4  input:focus{ border: none !important; box-shadow: none !important; }   </div><div class="post-footer">
-        <a href="/bootstrap-css/">阅读全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/bootstrap/">bootstrap</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>

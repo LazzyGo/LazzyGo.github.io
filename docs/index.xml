@@ -4,9 +4,17 @@
         <link>http://localhost:1313/</link>
         <description>学习Go语言，搭建Hugo博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lazzygo@outlook.com (Go博客)</managingEditor>
-            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Fri, 11 Mar 2022 13:17:49 &#43;0000</lastBuildDate>
+            <webMaster>lazzygo@outlook.com (Go博客)</webMaster><lastBuildDate>Mon, 21 Mar 2022 09:13:05 &#43;0000</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>交易所api</title>
+    <link>http://localhost:1313/exapi/</link>
+    <pubDate>Mon, 21 Mar 2022 09:13:05 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://localhost:1313/exapi/</guid>
+    <description><![CDATA[bybit 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  import requests import json r=requests.get(&#34;https://api-testnet.bybit.com/public/linear/kline?symbol=BTCUSDT&amp;interval=1&amp;limit=2&amp;from=1581231260&#34;) print(json.dumps(json.loads(r.text)[&#39;result&#39;],indent=4,sort_keys=True)) kline=&#34;https://api-testnet.bybit.com/public/linear/kline&#34; params={ &#39;symbol&#39;:&#39;BTCUSDT&#39;, &#39;interval&#39;:1, &#39;limit&#39;:2, &#39;from&#39;:1581231260 } r1=requests.get(kline,params=params) data=json.loads(r1.text) data=json.dumps(data[&#39;result&#39;],indent=4,sort_keys=True) print(data)   binance docs: https://binance-docs.github.io/apidocs/futures/en
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  import json,requests def test(url,paramas): r=requests.get(url,params=params).text data=json.dumps(json.loads(r),indent=4,sort_keys=True) print(data) return data url=&#34;https://fapi.binance.com/fapi/v1/time&#34; params={} r=test(url,params) #r=requests.get(&#34;https://fapi.binance.com/fapi/v1/time&#34;) #print(r.]]></description>
+</item><item>
     <title>在vim下写Python</title>
     <link>http://localhost:1313/vim/</link>
     <pubDate>Fri, 11 Mar 2022 13:17:49 &#43;0000</pubDate>
@@ -84,24 +92,5 @@
 1 2  Flask gunicorn   Procfile
 1  web: gunicorn main:app   提交 把这三个文件push到刚才创建的repo。
 1 2 3 4 5  git init git remote add origin [repo] git add * git commit -m [msg] git push origin master   设置 进heroku后台]]></description>
-</item><item>
-    <title>“只用”原则</title>
-    <link>http://localhost:1313/only/</link>
-    <pubDate>Fri, 04 Mar 2022 23:42:27 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>http://localhost:1313/only/</guid>
-    <description><![CDATA[前言  本篇幅仅仅是给自己制定的。首先，我很明确自己不是专业开发人员，也不想从事相关工作。 一切仅从解决问题的角度出发，即使代码写的再烂，只要能跑起来，完成它该做的事情就可以。
- 静态博客 只用Hugo，原因（在保证功能够用的情况下）：
- 最快，没有之一 最易用 最简单  拒绝hexo，jekyll的原因
- NPM版本与系统的兼容性 Gem，bundle，jekyll安装容易出错，一般只适用于最新版本的软件和系统  拒绝Pelican的原因
- 模板太难看，不要花时间去折腾开发模板，Hugo有现成的为什么不用  总结
- 不要花时间在开发主题上，直接用现成的 不要把时间浪费在安装上，也许只是一个小报错，少个依赖，安装就能解决，又或者是版本过低，但至少我在hugo上没遇到过任何这类问题  编程语言以及框架等相关的选择  我首先要明确一点，我不是专业开发人员，我不希望从事程序员行业，仅作为爱好，也不想花太多时间钻研，尽可能做出最简单的选择，而不是选择性能最好，也不是最受欢迎。
- 一般情况下，只用这三门脚本语言
- Python，相对简单 JavaScript，上天入地，无所不能 Shell，Linux必备  不打算学
- Java，没有使用Java的理由 C#，没有桌面软件、游戏开发的需求 C++，根本不知道C++是干嘛的 Ruby, Perl, R，我的评价是：不如Python jQuery，已经不再流行 设计模式，面向对象编程是什么？我只面向信仰编程 Django，不适合我的开发需求  尽可能少用或者不用的
- PHP，PHP不适合我 Go，虽然这个网站名字叫做“Go博客”，但是我并不打算深入学习Go，主要是它的特性，我没地方用，没有相关需求，Go可以用来提醒我，“编程可以是信仰”   总结：要在折腾的时候少折腾。
- 编辑器、文档、软件的选择 日常使用
- Vim，编辑器之神 VSCode，备用  不打算用的
- word, excel, ppt，世界上那么多人连office都不会安装还不是照样活得好好的 Adobe全家桶，我连PS抠图都抠不好，这辈子是不可能碰设计类的软件了 Autodesk全家桶 JetBrains全家桶 Android Studio, Visual Studio，没有相关开发需求，如果有，可以用electron和h5能省下很多学习成本  操作系统的选择 桌面操作系统只用：]]></description>
 </item></channel>
 </rss>
