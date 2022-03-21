@@ -1,7 +1,7 @@
 # 交易所api
 
 ### bybit
-```pythn
+```python
 import requests
 import json
 
@@ -61,6 +61,14 @@ print(data)
 ### gate
 
 docs: https://www.gate.ac/cn/api2
+
 futures: https://github.com/gateio/gateapi-python
 
+### CoinEx
+
+docs: https://viabtc.github.io/coinex_api_cn_doc/futures/#docsfutures001_http031_market_close
+
+### mexc
+
+docs: https://mxcdevelop.github.io/APIDoc/open.api.v2.cn.html
 
